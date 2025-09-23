@@ -2,3 +2,4 @@
 
 echo "All variables are passed to the sript: $@"
 echo "All variables are passed to the sript: $*"
+echo "Script name is: $0"
