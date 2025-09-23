@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 0]; then
+if [ $USERID -ne 0 ]; then
     echo "ERROR::Install MySql software with root user privileges"
     exit 1 # failure is other than 0
 fi
