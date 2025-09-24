@@ -27,7 +27,9 @@ VALIDATE(){ # Functions receives inputs through args just like shell script args
 # $@ is for all special variables (it returns all special variables--what ever we send args it returns)
 for package in $@
 do
-    if [ $? -ne 0 ];then #if exist status is not equal to 0 install software
+    # Check if package is already insalled or not!
+    dnf list installed $package &>>LOG_FILE
+    if [ $? -ne 0 ];then #if exist status is 0 , already installed . -ne 0 need to install it
     dnf install $package -y &>>LOG_FILE
     VALIDATE $? "$package"
     else
