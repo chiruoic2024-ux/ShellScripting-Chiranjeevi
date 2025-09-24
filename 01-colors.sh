@@ -8,5 +8,5 @@ Y="\e[33m "
 
 echo -e " $R Hello world!"
 echo -e " $G Hello world!"
-echo -e " $Y Hello world!"
+echo -e " $Y Hello world! $N"
 echo "Testing"
