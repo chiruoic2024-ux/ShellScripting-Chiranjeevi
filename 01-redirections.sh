@@ -20,7 +20,7 @@ VALIDATE(){ # Functions receives inputs through args just like shell script args
     echo -e "Installing $2 .....$R Failure $N"
     exit 1 # failure is other than 0
     else
-    echo "Installing $2 .....$R Success $N"
+    echo -e "Installing $2 .....$G Success $N"
     fi
 
 }
