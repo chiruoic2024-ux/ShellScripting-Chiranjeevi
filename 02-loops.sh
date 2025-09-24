@@ -31,6 +31,6 @@ do
     dnf install $package -y &>>LOG_FILE
     VALIDATE $? "$package"
     else
-        echo "$package alerady exists ......$Y SKIPPING $N"
+        echo -e "$package alerady exists ......$Y SKIPPING $N"
     fi
 done
