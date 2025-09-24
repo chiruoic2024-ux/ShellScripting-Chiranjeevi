@@ -10,7 +10,7 @@ SCRIPT_NAME=$( echo $0 | cut -d "." -f1 )
 LOG_FILE="$LOGS_DIR/$SCRIPT_NAME.log"
 mkdir -p $LOGS_DIR
 echo "Script execution started at: $(date)"
-if [ $USER_ID -ne 0]; then
+if [ $USER_ID -ne 0 ]; then
     echo "ERROR::Install the softwares using root user priveleges!"
     exit 1 # failure is other than 0
 fi
