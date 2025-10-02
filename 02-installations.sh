@@ -20,17 +20,17 @@ fi
 dnf install nginx -y
 
 if [ $? -ne 0 ]; then
-    echo "ERROR:: MySql installation is failed"
+    echo "ERROR:: nginx installation is failed"
     exit 1 # failure is other than 0
 else
-    echo "Mysql installation is successful"
+    echo "nginx installation is successful"
 fi
 
 dnf install mongodb-mongosh -y
 
 if [ $? -ne 0 ]; then
-    echo "ERROR:: MySql installation is failed"
+    echo "ERROR:: mongodb installation is failed"
     exit 1 # failure is other than 0
 else
-    echo "Mysql installation is successful"
+    echo "mongodb installation is successful"
 fi
